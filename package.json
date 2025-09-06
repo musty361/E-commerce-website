@@ -1,0 +1,16 @@
+{
+  "name": "ecommerce-app",
+  "version": "1.0.0",
+  "description": "## 🚀 Features - Beautiful gradient landing page - Product listing + cart - Stripe Checkout integration",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npm run --prefix frontend dev",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "mustytoh",
+  "license": "ISC",
+  "dependencies": {
+    "@stripe/react-stripe-js": "^4.0.0",
+    "@stripe/stripe-js": "^7.9.0"
+  }
+}
