@@ -15,7 +15,7 @@ interface CheckoutFormProps {
   onRemoveItem?: (index: number) => void;
 }
 
-const stripePromise = loadStripe("pk_test_51S3GYoDjr1WVDWJSJoiKCAKNWsotAbKK1vNEQmKLNnkuSDPg4aNZnNg5Lp7LnwNM5LBEY6jsfwBca394dUMkCBVc00YZGvA9fq");
+const stripePromise = loadStripe(process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY!);
 
 function CheckoutFormInner({ cart, onSuccess, onRemoveItem }: CheckoutFormProps) {
   const stripe = useStripe();
